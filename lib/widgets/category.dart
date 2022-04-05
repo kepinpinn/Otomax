@@ -13,7 +13,7 @@ class Category extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => DetailProduct(text: 'aaaa')));
+                  builder: (context) => DetailProduct(text: 'Hello')));
         },
         child: ListView(
           children: [
