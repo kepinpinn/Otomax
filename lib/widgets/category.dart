@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:otomax/widgets/category_card.dart';
 import 'package:otomax/model/rec.dart';
 import 'package:otomax/widgets/detail_product.dart';
+import 'package:http/http.dart' as http;
 
 class Category extends StatelessWidget {
   @override
@@ -40,12 +41,7 @@ class Category extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                RecCategory(
-                  Rec(
-                      id: 1,
-                      name: 'Velg Original Sparco',
-                      imageUrl: 'assets/sparco.png'),
-                ),
+                
               ],
             ),
           ],
