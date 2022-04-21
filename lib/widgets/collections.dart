@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:otomax/widgets/detail_product.dart';
 import 'package:otomax/home/discover.dart';
 
-class Collections extends StatelessWidget {
-  const Collections({Key? key}) : super(key: key);
+class Collections extends StatefulWidget {
+  Collections({Key? key}) : super(key: key);
 
   @override
+  State<Collections> createState() => _CollectionsState();
+}
+
+class _CollectionsState extends State<Collections> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+      home: Scaffold(
         body: SafeArea(
             child: ListView(
       children: [
@@ -40,6 +46,9 @@ class Collections extends StatelessWidget {
                     child:
                         Image.asset('assets/enkei16.jpg', fit: BoxFit.cover))))
       ],
-    )));
+    )
+    )
+      ),
+    );
   }
 }

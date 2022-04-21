@@ -1,7 +1,20 @@
-class Rec {
-  int id;
-  String name;
-  String imageUrl;
+import 'dart:convert';
 
-  Rec({ required this.id, required this.imageUrl,required this.name});
+class Rec {
+  final int id;
+  final String merek,foto_merek;
+
+  Rec({ 
+    required this.id, 
+    required this.merek,
+    required this.foto_merek,
+    });
+  
+  factory Rec.fromJson(Map<String, dynamic> json){
+    return Rec(
+      id: int.parse(json['id']), 
+      merek: json['merek'],
+      foto_merek: json['foto_merek']
+      );
+  }
 }

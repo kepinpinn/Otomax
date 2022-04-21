@@ -6,6 +6,8 @@ import 'package:otomax/widgets/collections.dart';
 import 'package:otomax/widgets/detail_screen.dart';
 import 'dart:async';
 import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:otomax/model/rec.dart';
 
 class DetailProduct extends StatelessWidget {
   final String text;

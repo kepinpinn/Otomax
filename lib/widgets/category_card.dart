@@ -30,7 +30,7 @@ class RecCategory extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  rec.imageUrl,
+                  rec.foto_merek,
                   width: 60,
                 ),
                 SizedBox(
@@ -42,10 +42,9 @@ class RecCategory extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      rec.name,
+                      rec.merek,
                       style: blackTextStyle,
                     ),
-                  
                   ],
                 ),
                 Spacer(),

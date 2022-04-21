@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:otomax/theme.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  Profile({Key? key}) : super(key: key);
 
   @override
+  State<Profile> createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
         child: ListView(
           children: [
             SizedBox(
@@ -57,6 +63,7 @@ class Profile extends StatelessWidget {
           ],
         )
         ),
+      ),
     );
   }
 }
